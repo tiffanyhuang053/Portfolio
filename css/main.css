@@ -1,0 +1,78 @@
+/* fonts */
+@font-face {
+  font-family: 'Flaviotte';
+  src: url(../fonts/Flaviotte.ttf);
+}
+
+@font-face {
+  font-family: 'Realtime-Bold';
+  src: url(../fonts/realtimetexttest-bold.otf);
+}
+
+@font-face {
+  font-family: 'Realtime-SemiBold';
+  src: url(../fonts/realtimetexttest-semibold.otf);
+}
+
+@font-face {
+  font-family: 'Roboto-Flex';
+  src: url(../fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
+
+h1 {
+    font-family: 'Flaviotte';
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-family: 'Realtime-Bold';
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-family: 'Realtime-Bold';
+    font-size: 1.375rem;
+}
+
+p {
+    font-family: 'Roboto-Flex';
+    font-weight: 300;
+}
+
+.nav-font {
+    font-family: 'Realtime-SemiBold';
+    font-size: 1.375rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main grid container */
+.main-grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0.25rem;
+}
+
+/* header/footer/nav-bar */
+header, footer {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 4.6875rem;
+}
+
+footer {
+    background-color: #4A6138;
+}
+
+footer a {
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
