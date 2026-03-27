@@ -19,6 +19,11 @@
   src: url(../fonts/RobotoFlex-VariableFont_GRAD\,XOPQ\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
 }
 
+@font-face {
+    font-family: 'Emoji';
+    src: url(../fonts/EmojiFont.ttf);
+}
+
 h1 {
     font-family: 'Flaviotte';
     font-size: 4.5rem;
@@ -53,6 +58,11 @@ p {
     color: #2D2926;
 }
 
+.emoji-font {
+    font-family: 'Emoji';
+    font-size: 2.75rem;
+}
+
 a {
     text-decoration: none;
 }
@@ -72,6 +82,11 @@ a {
 
 header a {
     color: #2D2926;
+    transition: 0.2s ease-in-out;
+}
+
+header a:hover, header a:focus {
+    color: #4A6138;
 }
 
 nav {
