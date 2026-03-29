@@ -24,19 +24,22 @@
     src: url(../fonts/EmojiFont.ttf);
 }
 
+/* main header */
 h1 {
     font-family: 'Flaviotte';
     font-size: 4.5rem;
     color: #2D2926;
 }
 
+/* header */
 h2 {
     font-family: 'Realtime-Bold';
     font-size: 1.875rem;
     color: #2D2926;
 }
 
-h3 {
+/* process analysis header */
+h3, .form-label {
     font-family: 'Realtime-Bold';
     font-size: 1.375rem;
     color: #2D2926;
@@ -46,6 +49,7 @@ p {
     font-family: 'Roboto-Flex';
     font-weight: 300;
     color: #2D2926;
+    margin: 0;
 }
 
 .nav-font {
@@ -61,6 +65,18 @@ p {
 .emoji-font {
     font-family: 'Emoji';
     font-size: 2.75rem;
+}
+
+.green-text {
+    color: #4A6138;
+}
+
+/* disabling overflow: https://stackoverflow.com/questions/24243961/disable-vertical-overflow-in-html-css */
+.cat-icon {
+    font-size: 0.65rem;
+    line-height: 1.2;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 a {
@@ -100,5 +116,47 @@ footer {
 
 footer a {
     color: white;
+    transition: 0.2s ease-in-out;
 }
 
+footer a:hover, footer a:focus {
+    color: #2D2926;
+}
+
+/* buttons */
+.btn {
+    background: #57773E;
+    color: white;
+}
+
+
+
+/* CONTACT FORM */
+.form {
+    position: relative;
+    z-index: 1;
+    
+    padding: 5rem;
+}
+
+/* before pseudo element: https://www.w3schools.com/cssref/sel_before.php */
+/* blurring filter: https://www.youtube.com/watch?v=8bTmIOxhIGg*/
+.form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    background-color: rgb(122, 170, 85, 0.5);
+    border-radius: 1rem;
+    filter: blur(50px);
+}
+
+.contact-top, .contact-bot {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
