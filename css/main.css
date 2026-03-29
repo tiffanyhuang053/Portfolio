@@ -49,7 +49,6 @@ p {
     font-family: 'Roboto-Flex';
     font-weight: 300;
     color: #2D2926;
-    margin: 0;
 }
 
 .nav-font {
@@ -83,19 +82,6 @@ a {
     text-decoration: none;
 }
 
-/* main grid container */
-/* .main-grid-container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 0.25rem;
-} */
-
-/* header/footer/nav-bar */
-/* header, footer {
-    display: flex;
-    justify-content: center;
-} */
-
 header a {
     color: #2D2926;
     transition: 0.2s ease-in-out;
@@ -126,6 +112,12 @@ footer a:hover, footer a:focus {
 /* buttons */
 .btn {
     background: #57773E;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+    background: rgb(87, 119, 62, 0.75);
     color: white;
 }
 
