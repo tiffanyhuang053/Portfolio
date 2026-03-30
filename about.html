@@ -11,34 +11,62 @@
         <header class="d-flex justify-content-center mt-4 mb-4">
             <nav>
                 <a href="index.html" class="nav-font">HOME</a>
-                <a href="projects.html" class="nav-font">PROJECTS</a>
+                <a href="index.html#projectSection" class="nav-font">PROJECTS</a>
                 <a href="about.html" class="nav-font">ABOUT</a>
                 <a href="contact.html" class="nav-font">CONTACT</a>
             </nav>
         </header>
 
-        <div class="container">
+        <div class="container about-top">
             <div class="row">
-                <div class="col-md-6">
-                    <h2>Hiya! It's nice to meet you <span class="emoji-font">E</span></h2>
-                    <p>I’m Tiffany, a UI/UX Designer and Front-End Developer based in Vancouver with a passion for creating functional, user-centered experiences.
-                        <br>
-                        <br>
-                    My first taste into this field was at an SFU WiCS Try/CATCH event in high school, where I attended an introductory UI workshop. Going into university, I initially planned to pursue a career in game design, but after exploring UI/UX further I thought to myself, ‘Hm, this could be pretty cool to do’ and the rest is history. As for front-end development, I’ve always been interested in coding, so why not bring my ideas to life with it?</p>
-                </div>
-                <div id="img-carousel" class="col-md-6">
-                    <!-- gonna need some js to make it switch -->
+                <div class="col-md-10 mx-auto">
+                    <div class="row gx-5">
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <h2>Hiya! It's nice to meet you <span class="emoji-font">E</span></h2>
+                            <p>I’m Tiffany, a UI/UX Designer and Front-End Developer based in Vancouver with a passion for creating functional, user-centered experiences.
+                                <br>
+                                <br>
+                            My first taste into this field was at an SFU WiCS Try/CATCH event in high school, where I attended an introductory UI workshop. Going into university, I initially planned to pursue a career in game design, but after exploring UI/UX further I thought to myself, ‘Hm, this could be pretty cool to do’ and the rest is history. As for front-end development, I’ve always been interested in coding, so why not bring my ideas to life with it?</p>
+                        </div>
+                        <div id="img-carousel" class="col-md-6 d-flex justify-content-center">
+                            <button onclick="prevAboutImg()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Left--Streamline-Font-Awesome" height="30" width="30" class="dark-chevron">
+                                    <desc>
+                                        Chevron Left Streamline Icon: https://streamlinehq.com
+                                    </desc>
+                                    <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path d="M7.216200000000001 13.517371875000002c-0.820040625 0.820040625 -0.820040625 2.151778125 0 2.97181875l12.595781249999998 12.595781249999998c0.820040625 0.820040625 2.151778125 0.820040625 2.97181875 0s0.820040625 -2.151778125 0 -2.97181875L11.670646875000001 15 22.7772375 3.886846875c0.820040625 -0.820040625 0.820040625 -2.151778125 0 -2.97181875s-2.151778125 -0.820040625 -2.97181875 0l-12.595781249999998 12.595781249999998Z" stroke-width="0.0938"></path>
+                                </svg>
+                            </button>
+                            <div class="aboutImgs">
+                                <img class="aboutImg" src="img/first.png">
+                                <img class="aboutImg" src="img/second.png">
+                                <img class="aboutImg" src="img/third.png">
+                            </div>
+                            <button onclick="nextAboutImg()">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Right--Streamline-Font-Awesome" height="30" width="30" class="dark-chevron">
+                                    <desc>
+                                        Chevron Right Streamline Icon: https://streamlinehq.com
+                                    </desc>
+                                    <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path d="M22.7838 13.517371875000002c0.820040625 0.820040625 0.820040625 2.151778125 0 2.97181875l-12.595781249999998 12.595781249999998c-0.820040625 0.820040625 -2.151778125 0.820040625 -2.97181875 0s-0.820040625 -2.151778125 0 -2.97181875L18.329353125 15 7.2227625 3.886846875c-0.820040625 -0.820040625 -0.820040625 -2.151778125 0 -2.97181875s2.151778125 -0.820040625 2.97181875 0l12.595781249999998 12.595781249999998Z" stroke-width="0.0938"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <footer class="d-flex justify-content-center">
             <nav class="mt-4 mb-4">
-                <a href="www.linkedin.com/in/tiffany-huang-8b4164231" class="nav-font">LINKEDIN</a>
+                <a href="https://www.linkedin.com/in/tiffany-huang-8b4164231/" class="nav-font">LINKEDIN</a>
                 <a href="" class="nav-font">EMAIL</a>
                 <a href="https://github.com/tiffanyhuang053" class="nav-font">GITHUB</a>
                 <a href="" class="nav-font">RESUME</a>
             </nav>
         </footer>
+
+        <script src="js/main.js"></script>
     </body>
 </html>
