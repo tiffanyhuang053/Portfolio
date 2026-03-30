@@ -70,12 +70,10 @@ p {
     color: #4A6138;
 }
 
-/* disabling overflow: https://stackoverflow.com/questions/24243961/disable-vertical-overflow-in-html-css */
+/* manipulating white space: https://www.w3schools.com/cssref/pr_text_white-space.php */
 .cat-icon {
-    font-size: 0.65rem;
-    line-height: 1.2;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    font-size: 0.6rem;
+    white-space: pre;
 }
 
 a {
@@ -121,8 +119,6 @@ footer a:hover, footer a:focus {
     color: white;
 }
 
-
-
 /* CONTACT FORM */
 .form {
     position: relative;
@@ -148,7 +144,44 @@ footer a:hover, footer a:focus {
     filter: blur(50px);
 }
 
-.contact-top, .contact-bot {
+.contact-top, .contact-bot, .about-top, .about-bot {
     margin-top: 7rem;
     margin-bottom: 7rem;
+}
+
+/* HOME */
+.home-margin {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+}
+
+/* CARDS */
+.card {
+    width: fit-content;
+    border: none;
+}
+
+/* CHEVRON */
+/* changing colour of svg: https://nucleoapp.com/blog/post/change-svg-color-css */
+.dark-chevron {
+    fill: #2d2926;
+    transition: 0.2s ease-in-out;
+}
+
+.dark-chevron:hover, .dark-chevron:focus {
+    fill: #4A6138;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+/* ABOUT */
+.aboutImgs img {
+    display: none;
+}
+
+img.displayImg {
+    display: block;
 }
