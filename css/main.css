@@ -71,6 +71,10 @@ p {
     color: #4A6138;
 }
 
+body {
+    background-color: #FDFDFD;
+}
+
 /* manipulating white space: https://www.w3schools.com/cssref/pr_text_white-space.php */
 .cat-icon {
     font-family: Menlo, monospace;
