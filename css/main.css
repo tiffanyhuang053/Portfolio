@@ -49,6 +49,7 @@ p {
     font-family: 'Roboto-Flex';
     font-weight: 300;
     color: #2D2926;
+    font-size: 1.05rem;
 }
 
 .nav-font {
@@ -186,4 +187,69 @@ button {
 
 img.displayImg {
     display: block;
+}
+
+/* 
+.form::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    background-color: rgb(122, 170, 85, 0.5);
+    border-radius: 1rem;
+    filter: blur(50px);
+}
+*/
+
+.floating-container {
+    position: relative;
+    height: 20rem;
+}
+
+.floating-container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: rgb(122, 170, 85, 0.5);
+    border-radius: 50%;
+    filter: blur(50px);
+}
+
+.floating {
+    cursor: pointer;
+    /* turning off the text select when moving the words: https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
+    user-select: none;
+    -webkit-user-select: none;
+    
+    position: absolute;
+    font-size: 1.25rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating:nth-child(1)  {top: 15%; left: 22%;}
+.floating:nth-child(2)  {top: 7%; left: 50%; animation-delay: 0.2s;}
+.floating:nth-child(3)  {top: 35%; left: 36%; animation-delay: 1s;}
+.floating:nth-child(4)  {top: 86%; left: 30%; animation-delay: 0.5s;}
+.floating:nth-child(5)  {top: 83%; left: 69%; animation-delay: 0.14s;}
+.floating:nth-child(6)  {top: 52%; left: 15%; animation-delay: 0.74s;}
+.floating:nth-child(7)  {top: 47%; left: 84%; animation-delay: 1.62s;}
+.floating:nth-child(8)  {top: 66%; left: 42%; animation-delay: 1.23s;}
+.floating:nth-child(9)  {top: 54%; left: 63%; animation-delay: 1.82s;}
+.floating:nth-child(10) {top: 22%; left: 73%; animation-delay: 1.42s;}
+
+@keyframes float {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.15);}
+    100% {transform: scale(1);}
 }
