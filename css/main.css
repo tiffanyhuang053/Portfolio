@@ -88,7 +88,7 @@ header a {
 }
 
 header a:hover, header a:focus {
-    color: #4A6138;
+    color: #57773E;
 }
 
 nav {
@@ -147,7 +147,7 @@ footer a:hover, footer a:focus {
     filter: blur(50px);
 }
 
-.contact-top, .contact-bot, .about-top, .about-bot {
+.contact-top, .contact-bot, .about-top, .about-bot, .analysis-top, .analysis, .analysis-bot {
     margin-top: 7rem;
     margin-bottom: 7rem;
 }
@@ -164,15 +164,15 @@ footer a:hover, footer a:focus {
     border: none;
 }
 
-/* CHEVRON */
+/* SVG */
 /* changing colour of svg: https://nucleoapp.com/blog/post/change-svg-color-css */
-.dark-chevron {
+.dark-svg {
     fill: #2d2926;
     transition: 0.2s ease-in-out;
 }
 
-.dark-chevron:hover, .dark-chevron:focus {
-    fill: #4A6138;
+.dark-svg:hover, .dark-svg:focus {
+    fill: #57773E;
 }
 
 button {
@@ -189,26 +189,16 @@ img.displayImg {
     display: block;
 }
 
-/* 
-.form::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    
-    background-color: rgb(122, 170, 85, 0.5);
-    border-radius: 1rem;
-    filter: blur(50px);
+#img-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
-*/
 
 .floating-container {
     position: relative;
-    height: 20rem;
+    height: 25rem;
+    width: auto;
 }
 
 .floating-container::before {
@@ -231,7 +221,7 @@ img.displayImg {
     /* turning off the text select when moving the words: https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
     user-select: none;
     -webkit-user-select: none;
-    
+
     position: absolute;
     font-size: 1.25rem;
     animation: float 3s ease-in-out infinite;
@@ -252,4 +242,31 @@ img.displayImg {
     0% {transform: scale(1);}
     50% {transform: scale(1.15);}
     100% {transform: scale(1);}
+}
+
+/* PROJECT ANALYSIS */
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    /* ABOUT PAGE */
+    .floating-container {
+        height: 33rem;
+    }
+
+    .floating:nth-child(1)  {top: 18%; left: 22%;}
+    .floating:nth-child(2)  {top: 7%; left: 37%;}
+    .floating:nth-child(3)  {top: 35%; left: 36%;}
+    .floating:nth-child(4)  {top: 86%; left: 30%;}
+    .floating:nth-child(5)  {top: 83%; left: 69%;}
+    .floating:nth-child(6)  {top: 52%; left: 15%;}
+    .floating:nth-child(7)  {top: 47%; left: 69%;}
+    .floating:nth-child(8)  {top: 70%; left: 42%;}
+    .floating:nth-child(9)  {top: 58%; left: 61%;}
+    .floating:nth-child(10) {top: 25%; left: 60%;}
+
+    /* CONTACT PAGE */
+    .form {
+        padding: 2rem;
+    }
 }
