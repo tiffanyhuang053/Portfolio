@@ -163,9 +163,9 @@ footer a:hover, footer a:focus {
 }
 
 /* CARDS */
-.card {
-    width: fit-content;
-    border: none;
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
 
 /* SVG */
@@ -252,6 +252,17 @@ img.displayImg {
 
 
 /* MEDIA QUERIES */
+@media (max-width: 425px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .home-margin {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+}
+
 @media (max-width: 768px) {
     /* ABOUT PAGE */
     .floating-container {
