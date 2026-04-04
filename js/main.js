@@ -1,4 +1,4 @@
-// making the img carousel work
+// making the about img carousel work
 
 // let imgBox = document.querySelector("#img-carousel");
 const aboutImgs = document.querySelectorAll(".aboutImgs img");
@@ -32,7 +32,43 @@ function nextAboutImg() {
     showAboutImg(aboutImgIndex);
 }
 
-initAboutCarousel();
+if (aboutImgs.length > 0) {
+    initAboutCarousel();
+}
+
+// THE MATCHA LAB BRANDING APPLIED IMAGE CAROUSEL
+const theMatchaLabBAImgs = document.querySelectorAll(".theMatchaLabBAImgs img");
+let matchaBAImgIndex = 0;
+let matchaBAIntervalID = null;
+
+function initMatchaBACarousel() {
+    theMatchaLabBAImgs[matchaBAImgIndex].classList.add("displayImg");
+}
+
+function showMatchaBAImg(index) {
+    if (index >= theMatchaLabBAImgs.length) {
+        matchaBAImgIndex = 0;
+    } else if (index < 0) {
+        matchaBAImgIndex = theMatchaLabBAImgs.length - 1;
+    }
+
+    theMatchaLabBAImgs.forEach(matchaBAImg => {
+        matchaBAImg.classList.remove("displayImg");
+    });
+    theMatchaLabBAImgs[matchaBAImgIndex].classList.add("displayImg");
+}
+
+function prevMatchaBAImg() {
+    matchaBAImgIndex--;
+    showMatchaBAImg(matchaBAImgIndex);
+}
+
+function nextMatchaBAImg() {
+    matchaBAImgIndex++;
+    showMatchaBAImg(matchaBAImgIndex);
+}
+
+initMatchaBACarousel();
 
 // grabbing words to move in about page
 let floatingWords = document.querySelectorAll(".floating");
