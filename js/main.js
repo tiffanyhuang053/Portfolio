@@ -68,7 +68,9 @@ function nextMatchaBAImg() {
     showMatchaBAImg(matchaBAImgIndex);
 }
 
-initMatchaBACarousel();
+if (theMatchaLabBAImgs.length > 0) {
+    initMatchaBACarousel();
+}
 
 // grabbing words to move in about page
 let floatingWords = document.querySelectorAll(".floating");
