@@ -1,6 +1,5 @@
 // making the about img carousel work
-
-// let imgBox = document.querySelector("#img-carousel");
+// Followed this tutorial, same code with slight tweaks for the rest of the image carousels: https://www.youtube.com/watch?v=749ta0nvj8s
 const aboutImgs = document.querySelectorAll(".aboutImgs img");
 let aboutImgIndex = 0;
 let aboutIntervalID = null;
@@ -173,7 +172,6 @@ if (DCOnboardingImgs.length > 0) {
     initDCOnboardingCarousel();
 }
 
-
 // grabbing words to move in about page
 let floatingWords = document.querySelectorAll(".floating");
 floatingWords.forEach((floatingWord => {
@@ -212,6 +210,7 @@ function dragWord (floatingWord) {
     floatingWord.addEventListener("mouseup", function() {
         if (dragging) {
             dragging = false;
+            // revert back to original state before dragging
             floatingWord.style.animation = "";
             floatingWord.style.animationDelay = "0s";
             floatingWord.style.position = "absolute"

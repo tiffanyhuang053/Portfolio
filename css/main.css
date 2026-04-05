@@ -24,6 +24,11 @@
     src: url(../fonts/EmojiFont.ttf);
 }
 
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
 /* main header */
 h1 {
     font-family: 'Flaviotte';
@@ -74,12 +79,26 @@ p {
     font-size: 2.75rem;
 }
 
+.style-guide-headers {
+    font-family: 'Inter';
+    font-size: 1.85rem;
+    font-weight: 600;
+    color: #2D2926;
+}
+
 .green-text {
     color: #4A6138;
 }
 
 body {
     background-color: #FDFDFD;
+}
+
+code {
+    display: block;
+    padding: 0.75rem;
+    color: #2D2926;
+    background-color: #DDDDDD;
 }
 
 /* manipulating white space: https://www.w3schools.com/cssref/pr_text_white-space.php */
@@ -93,19 +112,19 @@ a {
     text-decoration: none;
 }
 
-header a {
-    color: #2D2926;
-    transition: 0.2s ease-in-out;
-}
-
-header a:hover, header a:focus {
-    color: #57773E;
-}
-
 nav {
     display: flex;
     column-gap: 4.6875rem;
     row-gap: 2.5rem;
+}
+
+nav a {
+    color: #2D2926;
+    transition: 0.2s ease-in-out;
+}
+
+nav a:hover, nav a:focus {
+    color: #57773E;
 }
 
 footer {
@@ -178,6 +197,9 @@ footer a:hover, footer a:focus {
 }
 
 /* PROJECT CARDS */
+/* .card {
+    display: inline-block;
+} */
 .card-img-top {
     width: 100%;
     height: auto;
@@ -186,7 +208,7 @@ footer a:hover, footer a:focus {
 /* SVG */
 /* changing colour of svg: https://nucleoapp.com/blog/post/change-svg-color-css */
 .dark-svg {
-    fill: #2d2926;
+    fill: #2D2926;
     transition: 0.2s ease-in-out;
 }
 
@@ -305,10 +327,43 @@ button {
     overflow: hidden;
 }
 
-img.displayImg {
+/* DREAM CREATIVES */
+.DCAboutImgs img {
+    display: none;
+}
+
+#DCAbout-img-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.DCAbout-btn {
+    display: none;
+}
+
+.show-button {
     display: block;
 }
 
+.DCOnboardingImgs img {
+    display: none;
+}
+
+#DCOnboarding-img-carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+img.displayImg {
+    display: block;
+}
 
 /* MEDIA QUERIES */
 @media (max-width: 425px) {
