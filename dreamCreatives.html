@@ -143,23 +143,45 @@
                     </div>
                     <!-- BUILDING KEY PAGES SECTION -->
                     <div class="row gy-4 align-items-center analysis-separator analysis-content-separator">
-                        <div class="mb-5 text-center">
+                        <div class="col-12 mb-5 text-center">
                             <h2>Building Key Pages</h2>
                             <p>Towards the end of the second day, my partner and I began building the key pages that were identified earlier in the design process. We chose to split the pages amongst ourselves, with me focusing on the About, Contact, Sign-up, and Onboarding pages. While designing, I prioritized clarity in content and site navigation.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="mb-4">
-                                    <h3>About Page Design Decisions</h3>
-                                    <p>The original About Page was difficult to find and lacked clarity about the product being offered. It focused heavily the technicality of the AI tool but failed to communicate the main service – a photobooth experience designed for special events.</p>
-                                </div>
-                                <h4 class="mb-4">Here's what I did to address that:</h4>
-                                <div class="card p-3 shadow border-0">
-                                    <p class="m-0">I focused on communicating the product as a unique photobooth experience that could be booked for private events early in the page. I also added a benefits section, highlighting benefits received by both hosts and guests, enticing users to the product.</p>
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="mb-4">
+                                <h3>About Page Design Decisions</h3>
+                                <p>The original About Page was difficult to find and lacked clarity about the product being offered. It focused heavily the technicality of the AI tool but failed to communicate the main service – a photobooth experience designed for special events.</p>
                             </div>
-                            <div class="col-lg-6">
-                               <!-- IMG THING -->
+                            <h4 class="mb-4">Here's what I did to address that:</h4>
+                            <div class="card p-3 shadow border-0 about-change-desc">
+                                <p id="DCAbout-text" class="m-0">I focused on communicating the product as a unique photobooth experience that could be booked for private events early in the page. I also added a benefits section, highlighting benefits received by both hosts and guests, enticing users to the product.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <!-- IMG THING -->
+                            <div id="DCAbout-img-carousel" class="d-flex flex-column justify-content-center align-items-center">
+                                <div class="DCAboutImgs mb-2">
+                                    <img class="DCAboutImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesAboutTop.png">
+                                    <img class="DCAboutImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesAboutBottom.png">
+                                </div>
+                                <button onclick="nextDCAboutImg()" class="DCAbout-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Down--Streamline-Font-Awesome" height="30" width="30" class="dark-svg">
+                                        <desc>
+                                            Chevron Down Streamline Icon: https://streamlinehq.com
+                                        </desc>
+                                        <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                        <path d="M13.517373046874999 22.783798828125c0.8200371093750001 0.8200371093750001 2.151779296875 0.8200371093750001 2.97181640625 0l12.59578125 -12.59578125c0.8200371093750001 -0.8200371093750001 0.8200371093750001 -2.151779296875 0 -2.97181640625s-2.151779296875 -0.8200371093750001 -2.97181640625 0L15 18.329355468750002 3.8868457031249997 7.2227578125c-0.8200371093750001 -0.8200371093750001 -2.151779296875 -0.8200371093750001 -2.97181640625 0s-0.8200371093750001 2.151779296875 0 2.9718222656249997l12.59578125 12.59578125Z" stroke-width="0.0586"></path>
+                                    </svg>
+                                </button>
+                                <button onclick="prevDCAboutImg()" class="DCAbout-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Up--Streamline-Font-Awesome" height="30" width="30" class="dark-svg">
+                                        <desc>
+                                            Chevron Up Streamline Icon: https://streamlinehq.com
+                                        </desc>
+                                        <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                        <path d="M13.517373046874999 7.216201171874999c0.8200371093750001 -0.8200371093750001 2.151779296875 -0.8200371093750001 2.97181640625 0l12.59578125 12.59578125c0.8200371093750001 0.8200371093750001 0.8200371093750001 2.151779296875 0 2.97181640625s-2.151779296875 0.8200371093750001 -2.97181640625 0L15 11.67064453125 3.8868457031249997 22.7772421875c-0.8200371093750001 0.8200371093750001 -2.151779296875 0.8200371093750001 -2.97181640625 0s-0.8200371093750001 -2.151779296875 0 -2.9718222656249997l12.59578125 -12.59578125Z" stroke-width="0.0586"></path>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -188,11 +210,38 @@
                             </div>
                             <h4 class="mb-4">Here's what I did to address that:</h4>
                             <div class="card p-3 shadow border-0">
-                                <p class="m-0">I added a theme sorting system to help users sort through 20+ themes and find one they liked as well as a progress bar to set time expectations.</p>
+                                <p id="DCOnboarding-text" class="m-0">I added a theme sorting system to help users sort through 20+ themes and find one they liked as well as a progress bar to set time expectations.</p>
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <!-- IMG THING -->
+                            <div id="DCOnboarding-img-carousel" class="d-flex justify-content-center align-items-center">
+                                <button onclick="prevDCOnboardingImg()" class="ps-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Left--Streamline-Font-Awesome" height="30" width="30" class="dark-svg">
+                                        <desc>
+                                            Chevron Left Streamline Icon: https://streamlinehq.com
+                                        </desc>
+                                        <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                        <path d="M7.216200000000001 13.517371875000002c-0.820040625 0.820040625 -0.820040625 2.151778125 0 2.97181875l12.595781249999998 12.595781249999998c0.820040625 0.820040625 2.151778125 0.820040625 2.97181875 0s0.820040625 -2.151778125 0 -2.97181875L11.670646875000001 15 22.7772375 3.886846875c0.820040625 -0.820040625 0.820040625 -2.151778125 0 -2.97181875s-2.151778125 -0.820040625 -2.97181875 0l-12.595781249999998 12.595781249999998Z" stroke-width="0.0938"></path>
+                                    </svg>
+                                </button>
+                                <div class="DCOnboardingImgs">
+                                    <img class="DCOnboardingImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesOnboarding1.png">
+                                    <img class="DCOnboardingImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesOnboarding2.png">
+                                    <img class="DCOnboardingImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesOnboarding3.png">
+                                    <img class="DCOnboardingImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesOnboarding4.png">
+                                    <img class="DCOnboardingImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesOnboarding5.png">
+                                    <img class="DCOnboardingImg img-fluid" src="img/dreamCreativesRedesign/dreamCreativesOnboarding6.png">
+                                </div>
+                                <button onclick="nextDCOnboardingImg()" class="pe-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Right--Streamline-Font-Awesome" height="30" width="30" class="dark-svg">
+                                        <desc>
+                                            Chevron Right Streamline Icon: https://streamlinehq.com
+                                        </desc>
+                                        <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                        <path d="M22.7838 13.517371875000002c0.820040625 0.820040625 0.820040625 2.151778125 0 2.97181875l-12.595781249999998 12.595781249999998c-0.820040625 0.820040625 -2.151778125 0.820040625 -2.97181875 0s-0.820040625 -2.151778125 0 -2.97181875L18.329353125 15 7.2227625 3.886846875c-0.820040625 -0.820040625 -0.820040625 -2.151778125 0 -2.97181875s2.151778125 -0.820040625 2.97181875 0l12.595781249999998 12.595781249999998Z" stroke-width="0.0938"></path>
+                                    </svg>
+                                </button>
+                            </div>
                         </div>
                     </div>
 
@@ -201,9 +250,13 @@
                         <h2 class="text-center">Final Product</h2>
                         <div class="col-12">
                             <div class="display-wrapper">
-                            <iframe src="https://tiffanyhuang053.github.io/IAT339-P2-Company/site-pages/home.html" class="display-frame"></iframe>
-                            <img src="img/computerDisplay.png" alt="Apple Pro Display XDR" width="1077" height="814" class="img-fluid">
-                        </div>
+                                <!-- adding in a video in html: https://www.w3schools.com/html/html5_video.asp -->
+                                <video controls class="display-frame">
+                                    <source src="video/FLUI Dream Creatives Redesign Walkthrough (1).mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <img src="img/computerDisplay.png" alt="Apple Pro Display XDR" width="1077" height="814" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                     <!-- TAKEAWAYS -->
@@ -248,6 +301,7 @@
                 <a href="mailto:tiffanyhuang053@gmail.com" class="nav-font">EMAIL</a>
                 <a href="https://github.com/tiffanyhuang053" class="nav-font">GITHUB</a>
                 <a href="https://drive.google.com/uc?export=download&id=1pqkJTphZ4k8Y-MIUPWvGwFqks-EDt_ok" class="nav-font">RESUME</a>
+                <a href="styleGuide.html" class="nav-font">STYLE GUIDE</a>
             </nav>
         </footer>
 

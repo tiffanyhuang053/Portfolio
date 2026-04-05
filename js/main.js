@@ -72,6 +72,108 @@ if (theMatchaLabBAImgs.length > 0) {
     initMatchaBACarousel();
 }
 
+const DCAboutImgs = document.querySelectorAll(".DCAboutImgs img");
+const DCAboutBtns = document.querySelectorAll(".DCAbout-btn");
+const DCAboutText = document.querySelector("#DCAbout-text");
+let DCAboutImgIndex = 0;
+let DCAboutIntervalID = null;
+const DCAboutTexts = [
+    "I focused on communicating the product as a unique photobooth experience that could be booked for private events early in the page. I also added a benefits section, highlighting benefits received by both hosts and guests, enticing users to the product.",
+
+    "I introduced a clear step-by-step breakdown on how the AI photobooth works to help users quickly understand the process. Pricing tiers were also added to this page to provide transparency and help users make informed decisions."
+];
+
+function initDCAboutCarousel() {
+    DCAboutImgs[DCAboutImgIndex].classList.add("displayImg");
+    DCAboutBtns[DCAboutImgIndex].classList.add("show-button");
+}
+
+function showDCAboutImg(index) {
+    if (index >= DCAboutImgs.length) {
+        DCAboutImgIndex = 0;
+    } else if (index < 0) {
+        DCAboutImgIndex = DCAboutImgs.length - 1;
+    }
+
+    DCAboutImgs.forEach(DCAboutImg => {
+        DCAboutImg.classList.remove("displayImg");
+    });
+    DCAboutImgs[DCAboutImgIndex].classList.add("displayImg");
+
+    DCAboutText.textContent = DCAboutTexts[DCAboutImgIndex];
+
+    DCAboutBtns.forEach(DCAboutBtn => {
+        DCAboutBtn.classList.remove("show-button");
+    });
+    DCAboutBtns[DCAboutImgIndex].classList.add("show-button");
+}
+
+function prevDCAboutImg() {
+    DCAboutImgIndex--;
+    showDCAboutImg(DCAboutImgIndex);
+}
+
+function nextDCAboutImg() {
+    DCAboutImgIndex++;
+    showDCAboutImg(DCAboutImgIndex);
+}
+
+if (DCAboutImgs.length > 0) {
+    initDCAboutCarousel();
+}
+
+const DCOnboardingImgs = document.querySelectorAll(".DCOnboardingImgs img");
+const DCOnboardingText = document.querySelector("#DCOnboarding-text");
+let DCOnboardingImgIndex = 0;
+let DCOnboardingIntervalID = null;
+const DCOnboardingTexts = [
+    "I added a theme sorting system to help users sort through 20+ themes and find one they liked as well as a progress bar to set time expectations.",
+
+    "I added a theme preview along with example outputs with a short description to help guests understand their option before proceeding.",
+
+    "I added a ‘Photo Tips’ section to help users capture the best pictures possible.",
+
+    "Provided a step for users to review and confirm  their image before moving on, with clear calls-to-action to guide their interaction.",
+
+    "Included a transformation loader to indicate the image being generated.",
+
+    "I included calls-to-action with various options for guests to download or share their images with family and friends."
+];
+
+function initDCOnboardingCarousel() {
+    DCOnboardingImgs[DCOnboardingImgIndex].classList.add("displayImg");
+}
+
+function showDCOnboardingImg(index) {
+    if (index >= DCOnboardingImgs.length) {
+        DCOnboardingImgIndex = 0;
+    } else if (index < 0) {
+        DCOnboardingImgIndex = DCOnboardingImgs.length - 1;
+    }
+
+    DCOnboardingImgs.forEach(DCOnboardingImg => {
+        DCOnboardingImg.classList.remove("displayImg");
+    });
+    DCOnboardingImgs[DCOnboardingImgIndex].classList.add("displayImg");
+
+    DCOnboardingText.textContent = DCOnboardingTexts[DCOnboardingImgIndex];
+}
+
+function prevDCOnboardingImg() {
+    DCOnboardingImgIndex--;
+    showDCOnboardingImg(DCOnboardingImgIndex);
+}
+
+function nextDCOnboardingImg() {
+    DCOnboardingImgIndex++;
+    showDCOnboardingImg(DCOnboardingImgIndex);
+}
+
+if (DCOnboardingImgs.length > 0) {
+    initDCOnboardingCarousel();
+}
+
+
 // grabbing words to move in about page
 let floatingWords = document.querySelectorAll(".floating");
 floatingWords.forEach((floatingWord => {
