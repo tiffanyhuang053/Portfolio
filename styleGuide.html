@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Style Guide</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="m-5 d-flex justify-content-center">Tiffany Huang's Portfolio Style Guide</h1>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <p class="style-guide-headers">FONTS</p>
+                    <div class="d-flex gap-2 align-items-center">
+                        <h1 class="m-0">Main Header</h1>
+                        <p class="m-0">→ Flavoitte - 72px</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-end mb-3">
+                        <p class="m-0 nav-font">Navigation Bar Headers</p>
+                        <p class="m-0">→ Realtime Text Semibold - 22px</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-end mb-4">
+                        <h2 class="m-0">Main Header</h2>
+                        <p class="m-0">→ Realtime Bold - 30px</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-end mb-4">
+                        <h3 class="m-0">Sub Header</h3>
+                        <p class="m-0">→ Realtime Bold - 22px</p>
+                    </div>
+                    <div class="d-flex gap-2 align-items-end">
+                        <p class="m-0">Paragraphs</p>
+                        <p class="m-0">→ Roboto Flex Light - 16px</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <p class="style-guide-headers">COLOUR PALETTE</p>
+                    <img src="img/colourPalette.png" alt="Colour palette for my portfolio" class="img-fluid">
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <p class="style-guide-headers">INTERACTIVE ELEMENTS</p>
+                    <div class="mb-5">
+                        <div class="mb-4">
+                            <h3>Rendered Button:</h3>
+                            <button type="button" class="btn nav-font">Example Button</button>
+                        </div>
+                        <h3>Button Code Example:</h3>
+                        <code>&lt;button type="button" class="btn nav-font"&gt;Example Button&lt;/button&gt;</code>
+                    </div>
+                    <div class="mb-5">
+                        <div class="mb-4">
+                            <h3>Rendered Arrows:</h3>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Left--Streamline-Font-Awesome" height="30" width="30" class="dark-svg">
+                                    <desc>
+                                        Chevron Left Streamline Icon: https://streamlinehq.com
+                                    </desc>
+                                    <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path d="M7.216200000000001 13.517371875000002c-0.820040625 0.820040625 -0.820040625 2.151778125 0 2.97181875l12.595781249999998 12.595781249999998c0.820040625 0.820040625 2.151778125 0.820040625 2.97181875 0s0.820040625 -2.151778125 0 -2.97181875L11.670646875000001 15 22.7772375 3.886846875c0.820040625 -0.820040625 0.820040625 -2.151778125 0 -2.97181875s-2.151778125 -0.820040625 -2.97181875 0l-12.595781249999998 12.595781249999998Z" stroke-width="0.0938"></path>
+                                </svg>
+                            </button>
+                            <button>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Right--Streamline-Font-Awesome" height="30" width="30" class="dark-svg">
+                                    <desc>
+                                        Chevron Right Streamline Icon: https://streamlinehq.com
+                                    </desc>
+                                    <!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.-->
+                                    <path d="M22.7838 13.517371875000002c0.820040625 0.820040625 0.820040625 2.151778125 0 2.97181875l-12.595781249999998 12.595781249999998c-0.820040625 0.820040625 -2.151778125 0.820040625 -2.97181875 0s-0.820040625 -2.151778125 0 -2.97181875L18.329353125 15 7.2227625 3.886846875c-0.820040625 -0.820040625 -0.820040625 -2.151778125 0 -2.97181875s2.151778125 -0.820040625 2.97181875 0l12.595781249999998 12.595781249999998Z" stroke-width="0.0938"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <h3>Arrows Code Example:</h3>
+                        <p>Please note the SVGs change depending on the direction, refer to the citations for SVG arrows.</p>
+                        <code>
+                            &lt;button&gt;
+                                &lt;svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="Chevron-Left--Streamline-Font-Awesome" height="30" width="30" class="dark-svg"&gt;
+                                    &lt;desc&gt;
+                                        Chevron Left Streamline Icon: https://streamlinehq.com
+                                    &lt;/desc&gt;
+                                    &lt;path d="M7.216200000000001 13.517371875000002c-0.820040625 0.820040625 -0.820040625 2.151778125 0 2.97181875l12.595781249999998 12.595781249999998c0.820040625 0.820040625 2.151778125 0.820040625 2.97181875 0s0.820040625 -2.151778125 0 -2.97181875L11.670646875000001 15 22.7772375 3.886846875c0.820040625 -0.820040625 0.820040625 -2.151778125 0 -2.97181875s-2.151778125 -0.820040625 -2.97181875 0l-12.595781249999998 12.595781249999998Z" stroke-width="0.0938"&gt;&lt;/path&gt;
+                                &lt;/svg&gt;
+                            &lt;/button&gt;
+                        </code>
+                    </div>
+                    <div class="mb-5">
+                        <div class="mb-4">
+                            <h3>Rendered Navigation Bar:</h3>
+                            <nav class="d-flex flex-wrap justify-content-center mt-4 mb-4">
+                                <a href="#" class="nav-font">HOME</a>
+                                <a href="#" class="nav-font">PROJECTS</a>
+                                <a href="#" class="nav-font">ABOUT</a>
+                                <a href="#" class="nav-font">CONTACT</a>
+                            </nav>
+                        </div>
+                        <h3>Navigation Bar Code Example:</h3>
+                        <code>
+                            &lt;nav class="d-flex flex-wrap justify-content-center mt-4 mb-4"&gt;
+                                &lt;a href="#" class="nav-font"&gt;HOME&lt;/a&gt;
+                                &lt;a href="#" class="nav-font"&gt;PROJECTS&lt;/a&gt;
+                                &lt;a href="#" class="nav-font"&gt;ABOUT&lt;/a&gt;
+                                &lt;a href="#" class="nav-font"&gt;CONTACT&lt;/a&gt;
+                            &lt;/nav&gt;
+                        </code>
+                    </div>
+                    <div class="mb-5">
+                        <div class="mb-4">
+                            <h3>Rendered Footer Bar:</h3>
+                            <footer class="d-flex justify-content-center">
+                                <nav class="mt-4 mb-4 flex-wrap justify-content-center">
+                                    <a href="#" class="nav-font">LINKEDIN</a>
+                                    <a href="#" class="nav-font">EMAIL</a>
+                                    <a href="#" class="nav-font">GITHUB</a>
+                                    <a href="#" class="nav-font">RESUME</a>
+                                </nav>
+                            </footer>
+                        </div>
+                        <h3>Footer Bar Code Example:</h3>
+                        <code>
+                            &lt;footer class="d-flex justify-content-center"&gt;
+                                &lt;nav class="mt-4 mb-4 flex-wrap justify-content-center"&gt;
+                                    &lt;a href="#" class="nav-font"&gt;LINKEDIN&lt;/a&gt;
+                                    &lt;a href="#" class="nav-font"&gt;EMAIL&lt;/a&gt;
+                                    &lt;a href="#" class="nav-font"&gt;GITHUB&lt;/a&gt;
+                                    &lt;a href="#" class="nav-font"&gt;RESUME&lt;/a&gt;
+                                &lt;/nav&gt;
+                            &lt;/footer&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col-12">
+                    <p class="style-guide-headers">COMBINED ELEMENTS</p>
+                    <div class="mb-5">
+                        <h3>Project Card Example:</h3>
+                        <div class="card rounded-4 border-0 bg-transparent d-inline-block">
+                            <img class="card-img-top rounded-4 shadow-sm" src="img/matchaLabCard.png" alt="Logo of The Matcha Lab" width="423" height="280">
+                            <div class="card-body ps-0">
+                                <p class="nav-font">The Matcha Lab</p>
+                                <a href="theMatchaLab.html">
+                                    <button type="button" class="btn nav-font">View Project <i class="bi bi-arrow-right-short"></i></button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Contact Form Example:</h3>
+                    <div class="col-8 mb-5">
+                        <div class="form">
+                            <h2 class="text-center mb-4">Contact Form</h2>
+                            <div class="mb-4">
+                                <label for="nameInput" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="nameInput" placeholder="Jane Smith">
+                            </div>
+                            <div class="mb-4">
+                                <label for="emailInput" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="emailInput" placeholder="janeSmith@email.com">
+                            </div>
+                            <div class="mb-4">
+                                <label for="messageInput" class="form-label">Message</label>
+                                <textarea class="form-control" id="messageInput" rows="3" placeholder="Type your message here!">Type your message here!</textarea>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn nav-font ps-4 pe-4">Submit!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="d-flex justify-content-center">
+            <nav class="mt-4 mb-4 flex-wrap justify-content-center">
+                <a href="index.html" class="nav-font">PORTFOLIO</a>
+                <a href="citations.html" class="nav-font">CITATIONS</a>
+            </nav>
+        </footer>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
