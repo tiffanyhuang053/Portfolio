@@ -101,13 +101,6 @@ code {
     background-color: #DDDDDD;
 }
 
-/* manipulating white space: https://www.w3schools.com/cssref/pr_text_white-space.php */
-.cat-icon {
-    font-family: Menlo, monospace;
-    font-size: 0.6rem;
-    white-space: pre;
-}
-
 a {
     text-decoration: none;
 }
@@ -197,9 +190,6 @@ footer a:hover, footer a:focus {
 }
 
 /* PROJECT CARDS */
-/* .card {
-    display: inline-block;
-} */
 .card-img-top {
     width: 100%;
     height: auto;
